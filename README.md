@@ -68,7 +68,7 @@ The application uses an SQLite database (`bank.db`) with a table named `accounts
 |------------|-----------|-------------|
 | id | INTEGER PRIMARY KEY | Auto-incrementing account ID |
 | name | TEXT | Account holder's name |
-| balance | REAL | Account balance |
+| balance | INTEGER | Account balance |
 
 ## Future Improvements
 - Implement authentication with a PIN or password
