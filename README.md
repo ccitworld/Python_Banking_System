@@ -30,7 +30,7 @@ Banking-System/
 
 1. Clone this repository:
    ```sh
-   git clone https://github.com/yourusername/banking-system.git
+   git clone https://github.com/ccitworld/banking-system.git
    cd banking-system
    ```
 
