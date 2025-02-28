@@ -1,17 +1,17 @@
 from tkinter.messagebox import *
 
 def create_table(conn):
-    query="CREATE TABLE IF NOT EXISTS accmaster(accno INTEGER PRIMARY KEY,balance int)"
+    query="CREATE TABLE IF NOT EXISTS accmaster(accno INTEGER PRIMARY KEY,name text,balance int)"
     cur=conn.cursor()
     cur.execute(query)
     conn.commit()
 
-def create_account_db(conn,accno,balance):
+def create_account_db(conn,accno,name,balance):
     accno=int(accno)
     balance=int(balance)
-    query="INSERT into accmaster values(?,?)"
+    query="INSERT into accmaster values(?,?,?)"
     cur=conn.cursor()
-    cur.execute(query,[accno,balance])
+    cur.execute(query,[accno,name,balance])
     conn.commit()
     if cur.rowcount>0:
         showinfo("BANK","Account Created Succefully")
@@ -27,7 +27,7 @@ def get_account_db(conn,accno):
     if account==None:
         showinfo("Bank","Account Not Found")
     else:
-        showinfo("Bank",f"Accno:{account[0]}\nBalance:{account[1]}")
+        showinfo("Bank",f"Accno : {account[0]}\nName : {account[1]}\nBalance : {account[2]}")
 
 def deposit_db(conn,accno,amt):
     accno=int(accno)
