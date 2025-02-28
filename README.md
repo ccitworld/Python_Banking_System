@@ -35,10 +35,7 @@ Banking-System/
    ```
 
 2. Install required dependencies:
-   ```sh
-   pip install tk
-   ```
-   *(SQLite is included with Python by default, so no additional installation is needed.)*
+   *(SQLite and Tkinter is included with Python by default, so no additional installation is needed.)*
 
 ## Steps to Run
 
