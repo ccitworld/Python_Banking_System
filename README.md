@@ -70,14 +70,5 @@ The application uses an SQLite database (`bank.db`) with a table named `accounts
 | name | TEXT | Account holder's name |
 | balance | INTEGER | Account balance |
 
-## Future Improvements
-- Implement authentication with a PIN or password
-- Add transaction history tracking
-- Improve GUI design with additional styling
 
-## License
-This project is licensed under the MIT License.
-
-## Author
-Your Name - [GitHub Profile](https://github.com/yourusername)
 
