@@ -50,10 +50,10 @@ Banking-System/
 
 ## Screenshots
 ### Main Screen
-![Main Screen](images/main_screen.png)
+![Main Screen](images/main.png)
 
 ### Open Account
-![Open Account](images/open_account.png)
+![Open Account](images/open.png)
 
 ### Deposit
 ![Deposit](images/deposit.png)
